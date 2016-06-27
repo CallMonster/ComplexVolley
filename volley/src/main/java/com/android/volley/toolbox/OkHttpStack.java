@@ -96,8 +96,7 @@ public class OkHttpStack implements HttpStack{
     }
 
     @SuppressWarnings("deprecation")
-    private static void setConnectionParametersForRequest(
-            okhttp3.Request.Builder builder, Request<?> request) throws IOException,
+    private static void setConnectionParametersForRequest(okhttp3.Request.Builder builder, Request<?> request) throws IOException,
             AuthFailureError {
         switch (request.getMethod()) {
             case Request.Method.DEPRECATED_GET_OR_POST:
