@@ -37,7 +37,6 @@ public class SSLRequestUtils {
             sslContext.init(null, managerFactory.getTrustManagers(), null);
             return sslContext.getSocketFactory();
         } catch (Exception e) {
-            // TODO: handle error
             Log.i("err","e:"+e);
         }
         return null;
